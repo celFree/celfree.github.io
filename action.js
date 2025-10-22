@@ -57,6 +57,6 @@ main_splash.addEventListener("click", refreshSplash);
 second_splash.addEventListener("click", refreshSplash);
 document.getElementById("regen_splash").addEventListener("click", requestSplash);
 document.getElementById("requested_splash").addEventListener("input", () => current_splash.value = parseInt(document.getElementById("requested_splash").value));
-document.getElementById("previous_splash").addEventListener("click", () => {if(texts[current_splash.value - 1][2] == true) incrementSplash(-2); else incrementSplash(-1)});
-document.getElementById("next_splash").addEventListener("click", () => {if(texts[current_splash.value + 1][2] == true) incrementSplash(2); else incrementSplash(1)});
+document.getElementById("previous_splash").addEventListener("click", () => {if(texts[current_splash.value - 1][2] == true && localStorage.getItem("suggestive") == "no I am a virgin") incrementSplash(-2); else incrementSplash(-1)});
+document.getElementById("next_splash").addEventListener("click", () => {if(texts[current_splash.value + 1][2] == true && localStorage.getItem("suggestive") == "no I am a virgin") incrementSplash(2); else incrementSplash(1)});
 sexcheck.addEventListener("change", toggleSuggestive)
