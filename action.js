@@ -14,6 +14,7 @@ function refreshSplash() {
     applyNewSplash();
 }
 
+// TODO: delete this fucking shit
 function fakeReload() {
     alert("just use the re-load button at the top of browser!!!\nit comes FREE!! with your browser!!!!!!!11!!1!!");
 }
@@ -41,14 +42,10 @@ function incrementSplash(amount) {
 }
 
 function toggleSuggestive() {
-    if(localStorage.getItem("suggestive") == null) {
-        if(sexcheck.checked)
+    if(sexcheck.checked)
             localStorage.setItem("suggestive", "no I am a virgin"); // unnecessarily long string value haha ik bad practise but fuck you
         else
             localStorage.setItem("suggestive", "yes I like r34");
-    } else {
-        
-    }
 }
 
 

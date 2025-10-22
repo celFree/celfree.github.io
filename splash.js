@@ -214,3 +214,6 @@ second_splash.style.marginLeft = "100px";
 
 // show splash number
 splash_number.textContent = "Current splash is #" + (current_splash.value + 1);
+
+// create toggle setting in local storage
+localStorage.setItem("suggestive", "no I am a virgin");
